@@ -10,9 +10,8 @@ run <<= run in Android
 
 libraryDependencies ++= Seq(
   "org.macroid" %% "macroid" % "2.0",
-  "com.android.support" % "support-v4" % "25.1.0",
   "org.macroid" %% "macroid-akka" % "2.0",
-  "com.typesafe.akka" %% "akka-actor" % "2.3.16"
+  "com.typesafe.akka" %% "akka-actor" % "2.5.3"
 )
 
 proguardScala in Android := true
