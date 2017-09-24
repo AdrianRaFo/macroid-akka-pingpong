@@ -2,6 +2,8 @@ platformTarget in Android := "android-25"
 
 name := "macroid-akka-pingpong"
 
+scalacOptions += "-Ywarn-unused-import"
+
 scalaVersion := "2.11.11"
 
 enablePlugins(AndroidApp)

@@ -3,15 +3,12 @@
   */
 package com.example.pingpong
 
-import android.os._
 import android.view.ViewGroup.LayoutParams._
 import android.view._
 import android.widget._
+import macroid._
 import macroid.FullDsl._
-import macroid.akka._
 import macroid.contrib.TextTweaks
-import macroid.{Ui, _}
-import scala.concurrent.ExecutionContext.Implicits.global
 
 /** Styles for our widgets */
 object Styles {
