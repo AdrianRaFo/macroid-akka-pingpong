@@ -9,13 +9,15 @@ enablePlugins(AndroidApp)
 run <<= run in Android
 
 libraryDependencies ++= Seq(
-  "org.macroid" %% "macroid" % "2.0",
-  "org.macroid" %% "macroid-akka" % "2.0",
-  "com.typesafe.akka" %% "akka-actor" % "2.5.3"
+  aar("org.macroid" %% "macroid" % "2.0"),
+  aar("org.macroid" %% "macroid-akka" % "2.0"),
+  "com.android.support" % "support-v4" % "25.0.1",
+  "com.typesafe.akka" %% "akka-actor" % "2.3.16"
 )
 
 proguardScala in Android := true
 dexMulti in Android := true
+fork in run := true
 
 // Generic ProGuard rules
 proguardOptions in Android ++= Seq(
